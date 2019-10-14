@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+
+.page{
+    
+    width: 720px;
+    height: 200px;
+    box-sizing: border-box;
+    margin: 10% auto;
+    overflow: hidden;
+}
+
+.slider{
+    
+    width: 1450px;
+    height: 150px;
+    box-sizing: border-box;
+      position: relative;
+  
+      -webkit-animation: logo 20s infinite;
+    animation: logo 20s infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes logo{
+    
+    0%{top: 0;left: 0;}
+    100%{top: 0;left:-700px;}
+}
+
+img{
+    
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: 40px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+img:hover{
+    
+    -webkit-filter: none;
+    filter: none;
+}
+
+.slider:hover{
+    
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
